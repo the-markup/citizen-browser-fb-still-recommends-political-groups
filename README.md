@@ -6,6 +6,8 @@ In the absence of a clear definition of political groups from Facebook, we took 
 
 We also counted recommendations for groups supporting local or national branches of the Republican and Democratic parties, defined by searching for the keywords "Democrat" or "Republican" and manually filtering out non-political results. Groups promoting the ideologies of democratic socialism or political (anti-monarchy) republicanism were retained.
 
+We also examined groups with the phrase "not my president" in the title, and identified militia groups through targeted keyword search and review.
+
 ## Data
 The `data/` directory contains files with data from the story, with csv files containing four different types of group.
 
@@ -14,4 +16,14 @@ The `data/` directory contains files with data from the story, with csv files co
 3. `republican-democrat.csv` contains 330 recommended groups with "Republican" or "Democrat" in the group title.
 4. `political-figures.csv` contains 584 recommended groups containing the name of a current legislator or political figure, as defined above.
 
-The data is also available in Excel spreadsheet format, with each of the above group types represented in a separate tab.
+The data is also available in [Excel spreadsheet](https://github.com/the-markup/citizen-browser-fb-still-recommends-political-groups/raw/main/data/Political%20recommended%20groups%20February-June.xlsx) format, with each of the above group types represented in a separate tab.
+
+-----
+
+Data in the files is arranged as follows:
+| column           | decription                                                                                |
+|:-----------------|:------------------------------------------------------------------------------------------|
+| group_name       | Name of the group at time of data collection                                              |
+| group_slug       | The unique identifier from the the group URL, i.e. facebook.com/groups/<group_slug>  |
+| n_user_recommend | Number of individual panelists who received a recommendation to join this group |
+| last_recommended  | Latest date in the investigation time period that the group was recommended to a panelist |
