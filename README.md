@@ -1,11 +1,11 @@
 # Citizen Browser: Facebook Keeps Recommending Political Groups, Including Some Associated With Militias
-This repository contains data from the story ["Facebook Keeps Recommending Political Groups—Including Militia Groups—To Its Users, Despite Promises"](https://themarkup.org/citizen-browser/) from from our series, [Citizen Browser](https://themarkup.org/citizen-browser/). Citizen Browser construction and methodology is described in "[How We Built a Facebook Inspector](https://themarkup.org/citizen-browser/2021/01/05/how-we-built-a-facebook-inspector)."
+This repository contains data from the story ["After Repeatedly Promising Not to, Facebook Keeps Recommending Political Groups to Its Users"](https://themarkup.org/citizen-browser/) from from our series, [Citizen Browser](https://themarkup.org/citizen-browser/). Citizen Browser construction and methodology is described in "[How We Built a Facebook Inspector](https://themarkup.org/citizen-browser/2021/01/05/how-we-built-a-facebook-inspector)."
 
 ## Methodology
-In the absence of a clear definition of political groups from Facebook, we took the standard Facebook uses when [classing ads as political](https://www.facebook.com/business/help/167836590566506?id=288762101909005) — *containing a call to political action or support for politicians, movements, parties or ideologies* — and constructed a simple classifier based on a list of the names of the President, Vice President and [serving members of the House and Senate](https://github.com/unitedstates/congress-legislators), plus two high profile non-serving politicians (Hillary Clinton and Donald Trump). Results were manually reviewed to remove groups related to non-political figures sharing names with politicians, such as the musician Al Green.
+In the absence of a clear definition of political groups from Facebook, we took the standard Facebook uses when [classifyng ads as political](https://www.facebook.com/business/help/167836590566506?id=288762101909005)—*containing a call to political action or support for politicians, movements, parties, or ideologies*—and constructed a simple classifier based on a list of the names of the president, vice president and [serving members of Congress](https://github.com/unitedstates/congress-legislators), plus two high-profile nonserving politicians (Hillary Clinton and Donald Trump). Results were manually reviewed to remove groups related to non-political figures sharing names with politicians, such as the musician Al Green.
 
 
-We also counted recommendations for groups supporting local or national branches of the Republican and Democratic parties, defined by searching for the keywords "Democrat" or "Republican" and manually filtering out groups unconnected to US politics, e.g. the United Kingdom Democratic Socialist Movement. Groups promoting the ideologies of democratic socialism or political (anti-monarchy) republicanism were retained.
+We also counted recommendations for groups supporting local or national branches of the Republican and Democratic parties, defined by searching for the keywords "Democrat" or "Republican" and manually filtering out groups unconnected to U.S. politics, e.g. the United Kingdom Democratic Socialist Movement. Groups promoting the ideologies of democratic socialism or political (anti-monarchy) republicanism were retained.
 
 We also examined groups with the phrase "not my president" in the title, and identified militia groups through targeted keyword search and review.
 
@@ -35,4 +35,4 @@ Data in `top-100.csv` contains columns as above, and one additional column:
 
 | column           | decription                                                                                |
 |:-----------------|:------------------------------------------------------------------------------------------|
-| is_political      | Boolean flag denoting whether the group was assessed to be political.                    |
+| is_political      | Boolean flag denoting whether the group was assessed to be political                    |
