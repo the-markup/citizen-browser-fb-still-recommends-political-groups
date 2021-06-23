@@ -12,7 +12,7 @@ We also examined groups with the phrase "not my president" in the title, and ide
 ## Data
 The `data/` directory contains files with data from the story, with csv files containing four different types of group.
 
-1. `militia-groups.csv` contains 1 recommended group associated with a known militia movement.
+1. `militia-groups.csv` contains 1 recommended political group with "militia" in the name.
 2. `not-my-president.csv` contains 15 recommended groups with the phrase "Not my president" in the group title.
 3. `republican-democrat.csv` contains 330 recommended groups with "Republican" or "Democrat" in the group title.
 4. `political-figures.csv` contains 584 recommended groups containing the name of a current legislator or political figure, as defined above.
