@@ -10,21 +10,29 @@ We also counted recommendations for groups supporting local or national branches
 We also examined groups with the phrase "not my president" in the title, and identified militia groups through targeted keyword search and review.
 
 ## Data
-The `data/` directory contains files with data from the story, with csv files containing four different types of group.
+The `data/` directory contains five csv files with data from the story. The first four csv files list the different types of group cited:
 
 1. `militia-groups.csv` contains 1 recommended political group with "militia" in the name.
 2. `not-my-president.csv` contains 15 recommended groups with the phrase "Not my president" in the group title.
 3. `republican-democrat.csv` contains 330 recommended groups with "Republican" or "Democrat" in the group title.
 4. `political-figures.csv` contains 584 recommended groups containing the name of a current legislator or political figure, as defined above.
 
+The fifth csv, `top-100.csv`, contains the 100 groups that were recommended to the most Citizen Browser panelists during the time of this investigation, along with a `TRUE` / `FALSE` flag denoting whether the group was assessed to be political.
+
 The data is also available in [Excel spreadsheet](https://github.com/the-markup/citizen-browser-fb-still-recommends-political-groups/raw/main/data/Political%20recommended%20groups%20February-June.xlsx) format, with each of the above group types represented in a separate tab.
 
 -----
 
-Data in the files is arranged as follows:
+Data in files 1-4 is arranged as follows:
 | column           | decription                                                                                |
 |:-----------------|:------------------------------------------------------------------------------------------|
 | group_name       | Name of the group at time of data collection                                              |
 | group_slug       | The unique identifier from the the group URL, i.e. facebook.com/groups/<group_slug>  |
 | n_user_recommend | Number of individual panelists who received a recommendation to join this group |
 | last_recommended  | Latest date in the investigation time period that the group was recommended to a panelist |
+
+Data in `top-100.csv` contains columns as above, and one additional column:
+
+| column           | decription                                                                                |
+|:-----------------|:------------------------------------------------------------------------------------------|
+| is_political      | Boolean flag denoting whether the group was assessed to be political.                    |
